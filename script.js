@@ -1,6 +1,6 @@
-let audioturn = new Audio("smb_jump-small.wav")
-let gameover = new Audio("smb_gameover.wav")
-let gamewin = new Audio("smb_stage_clear.wav")
+let audioturn = new Audio("Music/smb_jump-small.wav")
+let gameover = new Audio("Music/smb_gameover.wav")
+let gamewin = new Audio("Music/smb_stage_clear.wav")
 let turn = "X"
 let isgameover = false;
 

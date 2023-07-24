@@ -7,7 +7,7 @@
 
 body{
     min-height: 100vh;
-    background-image: url("space\ vector\ img.avif");
+    background-image: url("Images/space\ vector\ img.avif");
     background-size: cover;
     backdrop-filter: brightness(70%);
 }
