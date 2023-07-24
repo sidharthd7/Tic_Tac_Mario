@@ -1,0 +1,145 @@
+  @import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Poppins:wght@200;300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url("space\ vector\ img.avif");
+    background-size: cover;
+    backdrop-filter: brightness(70%);
+}
+
+nav{
+    background-color: rgb(131, 43, 226);
+    color: white;
+    height: 65px;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav ul{
+    list-style-type: none; 
+}
+
+.gamecontainer{
+    background-color: rgba(140, 227, 220, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    position: relative;
+    backdrop-filter: blur(5px);
+    border-radius: 16px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw);
+    font-family: 'Finger Paint', cursive;
+    color: rgb(209, 218, 225);
+    position: relative;
+    padding: 10px 10px;
+}
+
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info{
+    font-size: 24px;
+    text-shadow: 0 0 2px  rgb(167, 135, 201);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 650;
+}
+.box:hover{
+    background-color: rgba(137, 43, 226, 0.961);
+}
+
+.gameinfo{
+    padding: 0 34px;
+    font-family: 'Poppins', sans-serif;
+    /* margin: auto; */
+    text-align: center;
+}
+
+.gameinfo h1{
+    font-size: 2.4rem;
+    color: rgb(209, 218, 225);
+}
+.imgbox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+.br-0{
+    border-right: 0;
+}
+
+.bl-0{
+    border-left: 0;
+}
+
+.bt-0{
+    border-top: 0;
+}
+
+.bb-0{
+    border-bottom: 0;
+}
+
+#reset{
+    margin: 0 24px;
+    padding: 6px 24px;
+    background-color: rgb(130, 184, 231);
+    border-radius: 10px;
+    border-color: blueviolet;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+#reset:hover{
+    box-shadow: 1px 1px 4px black;
+}
+.line{
+    background-color: rgb(39, 129, 173);
+    width: 0;
+    height: 3px;
+    position: absolute;
+    border-radius: 3px;
+    transition: width 1s ease-in-out;
+}
+
+@media screen and (max-width: 800px) {
+    .gamecontainer{
+      flex-wrap: wrap;
+    }
+
+    .gameinfo{
+        margin-top: 34px;
+    }
+
+    .gameinfo h1{
+        font-size: 1.5rem;
+    }
+
+    .container{
+        grid-template-rows: repeat(3,20vw);
+        grid-template-columns: repeat(3,20vw);
+    }
+  }
